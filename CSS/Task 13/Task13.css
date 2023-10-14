@@ -1,0 +1,25 @@
+.top-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.end-child{
+    border: 2px solid grey;
+    margin: 10px;
+    height: 100px;
+    width: 130px;
+}
+.middle-child{
+    border: 2px solid grey;
+    margin: 10px 25px;
+    height: 100px;
+    width: 130px;
+}

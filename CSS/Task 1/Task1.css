@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+}
+div{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1{
+    align-self: center;
+    color: white;
+}
+
+p{
+    font-family: sans-serif;
+}

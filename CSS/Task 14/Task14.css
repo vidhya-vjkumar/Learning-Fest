@@ -1,0 +1,25 @@
+.tod0-list{
+    display: flex;
+    flex-direction: column;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(60, 59, 59);
+    padding: 10px;
+    height: 30px;
+    margin: 10px;
+}
+
+.circle{
+    background-color: rgb(209, 203, 203);
+    border: 1px solid rgb(60, 59, 59);
+    height: 20px;
+    width: 20px;
+    margin-inline-end: 10px;
+    border-radius: 10px;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
