@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - JS</title>
+</head>
+<body>
+    <form onsubmit="return validate()" action="index.html" style="text-align: center; padding: 50px;">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Username"><br><br>
+        <input type="password" id="password" placeholder="Password"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validate(){
+            var uname=document.getElementById("username").value
+            var pw=document.getElementById("password").value
+            if(uname.trim()=="" || pw.trim()==""){
+                alert("No blank values allowed")
+                return false
+            } else {
+                return true
+            }
+        }
+    </script>
+</body>
+</html>

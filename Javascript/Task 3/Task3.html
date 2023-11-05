@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - JS</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Personal Loan EMI Calculator</h1>
+        <label>Amount</label><br><br>
+        <input type="number" id="amount" placeholder="Enter amount"><br><br>
+        <label>Rate</label><br><br>
+        <input step=".1" id="rate" placeholder="Enter interest rate"><br><br>
+        <label>Months</label><br><br>
+        <input type="number" id="months" placeholder="Enter months"><br><br>
+        <button onclick="calculateEMI()">Calculate EMI</button>
+        <h3 id="emi"></h3>
+
+    </div>
+    <script>
+        function calculateEMI(){
+            var p=document.getElementById("amount").value
+            var r=document.getElementById("rate").value
+            r=r/12/100
+            var n=document.getElementById("months").value
+            var emi=p*r*((Math.pow((1+r),n))/(Math.pow((1+r),n)-1))
+            emi=Math.round(emi)
+            document.getElementById("emi").innerHTML="EMI: "+emi
+        }
+    </script>
+</body>
+</html>
